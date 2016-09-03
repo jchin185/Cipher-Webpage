@@ -1,0 +1,31 @@
+p.bold {
+	font-weight: bold;
+}
+
+.buttonDivider {
+	display: inline-block;
+	margin: 5px;
+}
+
+.encryptionList * {
+	margin: 5px 0px 5px 0px;
+}
+
+#caesarShiftAmount {
+	text-align: right;
+	width: 40px;
+}
+
+#caesarAnswerDiv {
+	display: none;
+}
+
+span {
+	display: inline-block;
+}
+
+textarea {
+	display: block;
+	height: 35px;
+    width: 300px;
+}

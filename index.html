@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style/styles.css">
+	<title>Encyrpt your text!</title>
+</head>
+<body>
+	<h1>Encryption</h1>
+	<ul class="encryptionList">
+		<li>
+			<h2>Caesar Cipher</h2>
+			<p>This simple cipher shifts each letter a certain amount.</p>
+			<p class="bold">Example: Shift 1</p>
+			<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+			BCDEFGHIJKLMNOPQRSTUVWXYZA</p>
+			<p class="bold">Example: Shift -5</p>
+			<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+			VWXYZABCDEFHGIJKLMNOPQRSLTU</p>
+			<p class="bold">NOTE: Shifts greater than 25 or less than -25 are the same as the remainder of that number divided by 25. </p>
+			<p class="bold">A shift of 26 is the same as a shift of 1.</p>
+			<a href="https://en.wikipedia.org/wiki/Caesar_cipher" target="_blank">Learn more</a>
+			<textarea id="caesarText">Insert text here</textarea>
+			<span> 
+				<p>Shift amount</p>
+			</span>
+			<span>
+				<input type="number" id="caesarShiftAmount" placeholder="1" step="1" value="1"/input>
+			</span>
+			<div>
+				<button button="button" id="caesarEncrypt">Encrypt</button>
+				<div class="buttonDivider"></div>
+				<button button="button">Decrypt</button>
+			</div>
+			<div id="caesarAnswerDiv">
+				<p>Your transformed text is : </p>
+				<div id="caesarAnswer"></div>
+			</div>
+		</li>
+	</ul>
+	<script data-main="app" src="lib/require.js"></script>
+</body>
+</html>
